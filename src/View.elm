@@ -40,6 +40,9 @@ toBrowserDocument { shared, view } =
     , body =
         List.concat
             [ [ Html.div [] view.body ]
+
+            -- this is where the problem is
+            -- not sure how to fix it
             , [ shared.toasts |> Toast.viewList |> Html.map (\( id, msg ) -> Shared.setToastMsg id msg) ]
             ]
     }

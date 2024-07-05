@@ -1,0 +1,22 @@
+# Dependencies
+elm-stuff
+node_modules
+
+# Editor stuff
+.idea
+*~
+*.bak
+*.orig
+
+# Local/generated files
+dist
+.DS_Store
+
+
+/dist
+/.elm-land
+/.env
+/elm-stuff
+/node_modules
+.DS_Store
+*.pem
